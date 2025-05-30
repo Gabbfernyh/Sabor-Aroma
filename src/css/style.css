@@ -1,65 +1,138 @@
 header {
-    position: fixed; /* Fixa o header no topo */
-    top: 0; /* Encosta no topo da tela */
-    left: 0; /* Encosta na esquerda */
-    width: 100vw; /* Ocupa toda a largura da viewport */
-    z-index: 1000; /* Garante que fique acima dos outros elementos */
-    display: flex; /* Usa flexbox para alinhar os itens */
-    flex-direction: column; /* Alinha itens em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    min-height: 150px; /* Altura mínima do header */
-    background-color: #3B2F2F; /* Cor de fundo caso a imagem não carregue */
-    background-image: url('https://cdn.pixabay.com/photo/2022/04/11/16/29/coffee-beans-7126154_1280.jpg'); /* Imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir todo o header */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    margin: 0; /* Remove margens */
-    padding: 40px 0 30px 0; /* Espaçamento interno superior e inferior */
-    color: #F5F5DC; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    font-family: 'Playfair Display', serif; /* Fonte padrão do header */
-    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+    position: fixed;
+    /*Fixa o header no topo */
+    top: 0;
+    /* Encosta no topo da tela */
+    left: 0vw;
+    /* Encosta na esquerda */
+    right: 0vw;
+    /* Encosta na direita */
+    height: vw;
+    /* Altura do header */
+    width: 100vw;
+    /* Ocupa toda a largura da viewport */
+    /* z-index: 1000; Garante que fique acima dos outros elementos */
+    display: flex;
+    /* Usa flexbox para alinhar os itens */
+    flex-direction: column;
+    /* Alinha itens em coluna */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+    min-height: 150px;
+    /* Altura mínima do header */
+    background-color: #3B2F2F;
+    /* Cor de fundo caso a imagem não carregue */
+    background-image: url('https://cdn.pixabay.com/photo/2022/04/11/16/29/coffee-beans-7126154_1280.jpg');
+    /* Imagem de fundo */
+    background-size: cover;
+    /* Faz a imagem cobrir todo o header */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Não repete a imagem */
+    margin: 0;
+    /* Remove margens */
+    padding: 40px 0 30px 0;
+    /* Espaçamento interno superior e inferior */
+    color: #F5F5DC;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    font-family: 'Playfair Display', serif;
+    /* Fonte padrão do header */
+    box-sizing: border-box;
+    /* Inclui padding e border no cálculo do tamanho */
 }
 
+
 header h1 {
-    margin: 0; /* Remove margem padrão */
-    color: #F5F5DC; /* Cor do texto */
-    font-family: 'Pacifico', cursive ; /* Fonte Pacifico para destaque */
-    font-size: 2.5rem; /* Tamanho da fonte */
-    font-weight: normal; /* Peso normal */
-    letter-spacing: 1px; /* Espaçamento entre letras */
+    margin: 0;
+    /* Remove margem padrão */
+    color: #F5F5DC;
+    /* Cor do texto */
+    font-family: 'Pacifico', cursive;
+    /* Fonte Pacifico para destaque */
+    font-size: 2.5rem;
+    /* Tamanho da fonte */
+    font-weight: normal;
+    /* Peso normal */
+    letter-spacing: 1px;
+    /* Espaçamento entre letras */
 }
 
 nav ul {
-    margin: 0; /* Remove margem padrão */
-    padding: 0; /* Remove padding padrão */
-    list-style: none; /* Remove marcadores da lista */
-    display: flex; /* Usa flexbox para alinhar os itens */
-    flex-direction: row; /* Itens em linha */
-    justify-content: flex-end; /* Alinha itens à direita */
-    gap: 12px; /* Espaço entre os itens */
+    margin: 0;
+    /* Remove margem padrão */
+    padding: 0;
+    /* Remove padding padrão */
+    list-style: none;
+    /* Remove marcadores da lista */
+    display: flex;
+    /* Usa flexbox para alinhar os itens */
+    flex-direction: row;
+    /* Itens em linha */
+    justify-content: flex-end;
+    /* Alinha itens à direita */
+    gap: 12px;
+    /* Espaço entre os itens */
 }
 
 header a {
-    text-decoration: none; /* Remove sublinhado */
-    color: #F5F5DC; /* Cor do texto */
-    font-family: 'Playfair Display', serif; /* Fonte dos links */
-    transition: transform 0.2s, border-bottom 0.2s; /* Suaviza a animação */
-    border-bottom: 2px solid transparent; /* Linha invisível inicialmente */
-    padding-bottom: 2px; /* Espaço para a linha */
+    text-decoration: none;
+    /* Remove sublinhado */
+    color: #F5F5DC;
+    /* Cor do texto */
+    font-family: 'Playfair Display', serif;
+    /* Fonte dos links */
+    transition: transform 0.2s, border-bottom 0.2s;
+    /* Suaviza a animação */
+    border-bottom: 2px solid transparent;
+    /* Linha invisível inicialmente */
+    padding-bottom: 2px;
+    /* Espaço para a linha */
 }
 
 header a:hover {
-    transform: translateY(-4px); /* Sobe levemente */
-    border-bottom: 2px solid #F5F5DC; /* Linha embaixo ao passar o mouse */
+    transform: translateY(-4px);
+    /* Sobe levemente */
+    border-bottom: 2px solid #F5F5DC;
+    /* Linha embaixo ao passar o mouse */
 }
 
 body {
-    font-family: 'Playfair Display', serif; /* Fonte padrão do site */
-    background-color: #F5F5DC; /* Cor de fundo */
-    color: #3B2F2F; /* Cor do texto */
-    margin: 0; /* Remove margem padrão */
-    padding: 20px; /* Espaçamento interno */
-    padding-top: 170px; /* Espaço para o header fixo (ajuste conforme necessário) */
+    font-family: 'Playfair Display', serif;
+    /* Fonte padrão do site */
+    background-color: #F5F5DC;
+    /* Cor de fundo */
+    color: #3B2F2F;
+    /* Cor do texto */
+    margin: 0;
+    /* Remove margem padrão */
+    padding: 20px;
+    /* Espaçamento interno */
+    padding-top: 190px;
+    /* Espaço para o header fixo (ajuste conforme necessário) */
+}
+
+section {
+    display: flex;
+    /* Usa flexbox para layout */
+    max-width: 800px;
+    /* Largura máxima da seção */
+    margin: 0 auto;
+    /* Centraliza a seção */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: #F5F5DC;
+    /* Cor de fundo da seção */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    flex-direction: column;
+    /* Alinha itens em coluna */
+    gap: 20px;
+    /* Espaço entre os itens */
 }
